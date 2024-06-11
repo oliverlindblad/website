@@ -154,16 +154,27 @@ h5 {
 }
 p {
   font-family: "Newsreader", serif;
+  font-size: 17px;
   color: #222725;
   margin-top: 5%;
   margin: 30px;
+  line-height: 200%;
 }
 .text1 {
   text-align: left;
 }
+.blue {
+  color: #0000ff;
+  text-decoration: underline;
+}
 /*************** Placing Mobil****************/
-
 .grid_2 {
+  gap: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: left;
+}
+.grid_7 {
   justify-content: center; /* Align items horizontally in the center */
   align-items: center; /* Align items vertically in the center */
   text-align: center; /* Center the text horizontally */
@@ -222,11 +233,13 @@ p {
   color: #222725;
   margin: 20px;
 }
-#hr {
-  height: 1px;
-  color: #222725;
+.hr hr {
+  border: 0;
+  height: 1.9px;
+  background-color: #222725;
   margin: 20px;
 }
+
 .center {
   text-align: center;
 }
@@ -237,6 +250,14 @@ html {
 
 @media screen and (min-width: 700px) {
   .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: left;
+  }
+  .grid_7 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -302,7 +323,7 @@ html {
     position: relative;
     display: inline-block;
     padding: 10px;
-    color: #e7decd;
+    color: #222725;
     transition: color 0.3s, transform 0.3s, filter 0.3s, background-color 0.3s, text-shadow 0.3s, border 0.3s;
     filter: grayscale(100%);
     background-color: transparent;
@@ -419,4 +440,14 @@ html {
 #myBtn:hover {
   background-color: #e7decd; /* Add a dark-grey background on hover */
   color: #222725;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.billed1 {
+  grid-row: 1/1;
+  aspect-ratio: 0.9/1.5;
 }
